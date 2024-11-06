@@ -4,7 +4,7 @@ async function vizualizarInformacoesGlobais() {
     const res = await fetch(url)
     const dados = await res.json()
 
-    const pessoasMundo = Math.round(dados.total_pessoas_mundo / 1e9).toFixed(1)
+    const pessoasMundo = (dados.total_pessoas_mundo / 1e9).toFixed(1)
     const pessoasEmpregadas = (dados.total_pessoas_empregadas / 1e9)
     const taxaDesemprego = (dados.taxa_de_desemprego * 100)
     const tempoMedio = Math.round(dados.tempo_medio_trabalho_por_semana)
