@@ -13,7 +13,7 @@ async function vizualizarInformacoesGlobais() {
     const paragrafo = document.createElement('p')
     paragrafo.classList.add('graficos-container__texto')
     paragrafo.innerHTML = `Você sabia que o mundo tem <span>${pessoasMundo}</span> bilhões de pessoas e que aproximadamente <span>${pessoasEmpregadas}</span> bilhões estão
-    empregadas, sendo a taxa de desemprego de <span>${taxaDesemprego}</span>%. Por fim, por semana, trabalham em média <span>${horas}</span> horas e <span>${minutos}</span> minutos.`
+    empregadas, sendo a taxa de desemprego de <span>${taxaDesemprego}</span> %. Por fim, por semana, trabalham em média <span>${horas}</span> horas e <span>${minutos}</span> minutos.`
     const container = document.getElementById('graficos-container')
     container.appendChild(paragrafo);
 }
