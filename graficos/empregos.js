@@ -9,15 +9,20 @@ async function empregos() {
         {
             x: nomeX,
             y: empregos,
-            type: 'bar'
+            type: 'pie'
         }
     ]
+
+    const layout = {
+        height: 400,
+        width: 500
+    };
 
         const grafico = document.createElement('div')
         grafico.className = 'grafico'
         document.getElementById('graficos-container').appendChild(grafico)
 
-        Plotly.newPlot(grafico, data);
+        Plotly.newPlot(grafico, data, layout);
         
     console.log(dados)
 }
