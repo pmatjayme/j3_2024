@@ -7,8 +7,8 @@ async function empregos() {
 
     const data = [
         {
-            x: nomeX,
-            y: empregos,
+            x: empregos,
+            y: nomeX,
             type: 'pie'
         }
     ]
