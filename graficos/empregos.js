@@ -18,7 +18,7 @@ async function empregos() {
         width: 500
     }
 
-    Plotly.newPlot('myDiv', data, layout);
+    Plotly.newPlot('grafico', data, layout);
 
         const grafico = document.createElement('div')
         grafico.className = 'grafico'
