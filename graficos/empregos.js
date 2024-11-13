@@ -22,7 +22,7 @@ async function empregos() {
         grafico.className = 'grafico'
         document.getElementById('graficos-container').appendChild(grafico)
 
-        Plotly.newPlot('grafico', data, layout);
+        Plotly.newPlot('myDiv', data, layout);
         
     console.log(dados)
 }
