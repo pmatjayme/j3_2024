@@ -7,19 +7,24 @@ async function empregos() {
 
     const data = [
         {
-            x: nomeX,
-            y: empregos,
-            type: 'bar'
+            labels: nomeX,
+            values: empregos,
+            type: 'pie'
         }
     ]
+
+    const layout = 
+    {
+      height: 600,
+      width: 870,
+    }
 
         const grafico = document.createElement('div')
         grafico.className = 'grafico'
         document.getElementById('graficos-container').appendChild(grafico)
 
-        Plotly.newPlot(grafico, data)
+        Plotly.newPlot(grafico, data, layout)
         
-    console.log(dados)
 }
 
 empregos()
