@@ -1,3 +1,5 @@
+import { getCSS, tickConfig} from "./common.js"
+
 async function empregos() {
     const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/trabalho/trabalho-tipos-de-ocupacao.json'
     const res = await fetch(url)
@@ -15,8 +17,25 @@ async function empregos() {
 
     const layout = 
     {
-      height: 1200,
-      width: 1740,
+      plot_bgcolor: getCSS('--bg-color'),
+      paper_bgcolor: getCSS('--bg-color'),
+      title: {
+        text: 'Tipos de Ocupações (Trabalhos) pelo Mundo',
+        font:{
+            color: getCSS('--secundary-color'),
+            family: getCSS('--font'),
+            size: 30
+        }
+      },
+    
+    labels: {
+        tickfont: tickConfig
+    },         
+    values: {
+        tickfont: tickConfig
+    }   ,
+      height: 600,
+      width: 870,
     }
 
         const grafico = document.createElement('div')
