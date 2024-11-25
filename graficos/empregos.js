@@ -15,8 +15,8 @@ async function empregos() {
 
     const layout = 
     {
-      height: 600,
-      width: 870,
+      height: 971,
+      width: 1408,
     }
 
         const grafico = document.createElement('div')
