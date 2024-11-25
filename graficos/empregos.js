@@ -27,12 +27,6 @@ async function empregos() {
             size: 30
         }
       },
-      labels: {
-        tickfont: tickConfig
-    },         
-    values: {
-        tickfont: tickConfig
-    }   ,
       height: 600,
       width: 870
     }
