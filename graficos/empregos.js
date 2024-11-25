@@ -1,4 +1,4 @@
-import { getCSS, tickConfig} from "./common.js"
+import { getCSS, tickConfig } from "./common.js"
 
 async function empregos() {
     const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/trabalho/trabalho-tipos-de-ocupacao.json'
@@ -27,8 +27,14 @@ async function empregos() {
             size: 30
         }
       },
+      labels: {
+        tickfont: tickConfig
+    },         
+    values: {
+        tickfont: tickConfig
+    }   ,
       height: 600,
-      width: 870,
+      width: 870
     }
 
         const grafico = document.createElement('div')
