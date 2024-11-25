@@ -11,7 +11,10 @@ async function empregos() {
         {
             labels: nomeX,
             values: empregos,
-            type: 'pie'
+            type: 'pie',
+            marker: {
+              color: getCSS('--primary-color')
+          }
         }
     ]
 
@@ -19,7 +22,6 @@ async function empregos() {
     {
       plot_bgcolor: getCSS('--bg-color'),
       paper_bgcolor: getCSS('--bg-color'),
-      rect_bgcolor: getCSS('--secundary-color'),
       title: {
         text: 'Tipos de Ocupações (Trabalhos) pelo Mundo',
         font:{
