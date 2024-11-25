@@ -11,10 +11,7 @@ async function empregos() {
         {
             labels: nomeX,
             values: empregos,
-            type: 'pie',
-            marker: {
-              color: getCSS('--primary-color')
-          }
+            type: 'pie'
         }
     ]
 
@@ -29,6 +26,13 @@ async function empregos() {
             family: getCSS('--font'),
             size: 28
         }
+      },
+      legend: { 
+        font: { 
+          color: getCSS('--secundary-color'), 
+          family: getCSS('--font'), 
+          size: 16 
+        } 
       },
       height: 600,
       width: 870
