@@ -24,9 +24,10 @@ async function empregos() {
         font:{
             color: getCSS('--secundary-color'),
             family: getCSS('--font'),
-            size: 30
+            size: 28
         }
       },
+      legendtoggle: tickConfig,
       height: 600,
       width: 870
     }
