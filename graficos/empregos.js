@@ -12,11 +12,8 @@ async function empregos() {
             labels: nomeX,
             values: empregos,
             type: 'pie',
-            textinfo: 'label+percent', 
-            textfont: { 
-              color: getCSS('--secundary-color') || '#FF0000', 
-              family: 'Arial, sans-serif', 
-              size: 16
+            marker: { 
+              colors: ['#ff7f0e', '#1f77b4', '#2ca02c', '#d62728', '#9467bd', '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf'] 
             }
         }
     ]
@@ -33,14 +30,14 @@ async function empregos() {
             size: 28
         }
       },
-      height: 600,
-      width: 870,
       legend: { 
         font: { 
           color: getCSS('--secundary-color') || '#FF0000',
           family: 'Arial, sans-serif', 
           size: 16 }
-    }
+        },
+      height: 600,
+      width: 870
   }
 
         const grafico = document.createElement('div')
