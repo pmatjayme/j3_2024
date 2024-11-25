@@ -1,4 +1,4 @@
-import { getCSS, tickConfig } from "./common.js"
+import { getCSS} from "./common.js"
 
 async function empregos() {
     const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/trabalho/trabalho-tipos-de-ocupacao.json'
@@ -11,7 +11,12 @@ async function empregos() {
         {
             labels: nomeX,
             values: empregos,
-            type: 'pie'
+            type: 'pie',
+            textfont: { 
+              color: getCSS('--secundary-color'),
+              family: getCSS('--font'), 
+              size: 16
+            }
         }
     ]
 
@@ -26,13 +31,6 @@ async function empregos() {
             family: getCSS('--font'),
             size: 28
         }
-      },
-      legend: { 
-        font: { 
-          color: getCSS('--secundary-color'), 
-          family: getCSS('--font'), 
-          size: 16 
-        } 
       },
       height: 600,
       width: 870
