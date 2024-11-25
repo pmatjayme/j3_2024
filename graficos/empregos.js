@@ -14,7 +14,7 @@ async function empregos() {
             type: 'pie',
             textinfo: 'label+percent', 
             textfont: { 
-              color: '#FF0000', 
+              color: getCSS('--secundary-color') || '#FF0000', 
               family: 'Arial, sans-serif', 
               size: 16
             }
@@ -34,8 +34,14 @@ async function empregos() {
         }
       },
       height: 600,
-      width: 870
+      width: 870,
+      legend: { 
+        font: { 
+          color: getCSS('--secundary-color') || '#FF0000',
+          family: 'Arial, sans-serif', 
+          size: 16 }
     }
+  }
 
         const grafico = document.createElement('div')
         grafico.className = 'grafico'
