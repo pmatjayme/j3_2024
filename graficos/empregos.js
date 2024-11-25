@@ -12,9 +12,10 @@ async function empregos() {
             labels: nomeX,
             values: empregos,
             type: 'pie',
+            textinfo: 'label+percent', 
             textfont: { 
-              color: getCSS('--secundary-color'),
-              family: getCSS('--font'), 
+              color: '#FF0000', 
+              family: 'Arial, sans-serif', 
               size: 16
             }
         }
