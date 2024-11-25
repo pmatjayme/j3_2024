@@ -19,6 +19,7 @@ async function empregos() {
     {
       plot_bgcolor: getCSS('--bg-color'),
       paper_bgcolor: getCSS('--bg-color'),
+      rect_bgcolor: getCSS('--secundary-color'),
       title: {
         text: 'Tipos de Ocupações (Trabalhos) pelo Mundo',
         font:{
@@ -27,7 +28,6 @@ async function empregos() {
             size: 28
         }
       },
-      legendtoggle: tickConfig,
       height: 600,
       width: 870
     }
